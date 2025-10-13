@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Likwi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root{--bg:#0f1115;--bg-soft:#151822;--border:#222738;--text:#e6e6e6;--muted:#9aa3b2;--card:#121626;--accent:#7c8cff}
+    html[data-bs-theme="dark"],body{background:var(--bg);color:var(--text)}
+    .navbar{background:var(--bg-soft)} .navbar,.border-bottom{border-color:var(--border)!important}
+    .navbar-brand,.nav-link{color:var(--text)!important} .nav-link:hover{color:var(--accent)!important}
+    .page-head{padding:2.25rem 0 1.25rem}
+    .subtitle{color:var(--muted);margin:0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px}
+    .card:hover{border-color:#2a3150;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+    .card-body{padding:1.1rem 1.2rem}
+    .h-title{display:flex;align-items:center;gap:.6rem;margin:0 0 .35rem}
+    .h-title .emoji{font-size:1.2rem;opacity:.95}
+    .badges{display:flex;flex-wrap:wrap;gap:.35rem;margin:.15rem 0 .6rem}
+    .badge-soft{background:#1a2034;border:1px solid #2a3150;color:#c8ceff;font-weight:500}
+    ul.compact{padding-left:1.2rem;margin:0} ul.compact li{margin:.2rem 0;color:var(--text)}
+    .muted{color:var(--muted)} .tagline{margin:0 0 .2rem}
+    .grid{row-gap:1rem}
+    footer{color:var(--muted)}
+    .dropdown-menu{background:var(--bg-soft);border-color:var(--border)}
+    .dropdown-item{color:var(--text)} .dropdown-item:hover{background:#1c2130}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg border-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="/">Likwi — Renato Fagalde</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="/projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">🌐</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" data-lang="en">English</a></li>
+              <li><a class="dropdown-item" data-lang="pt-BR">Português (BR)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="page-head border-bottom">
+    <div class="container">
+      <h1 id="t_title" class="h3 fw-semibold mb-1">Projects</h1>
+      <p id="t_subtitle" class="subtitle">Selected projects that blend performance, compliance and real-world impact.</p>
+    </div>
+  </header>
+
+  <!-- GRID -->
+  <main class="py-4">
+    <div class="container">
+      <div class="row grid row-cols-1 row-cols-lg-2 g-3">
+
+        <!-- TISS -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="h-title"><span class="emoji">🩺</span><h2 id="tiss_title" class="h5 m-0">TISS Project</h2></div>
+              <p id="tiss_tagline" class="tagline muted">Performance and compliance at scale.</p>
+              <div class="badges">
+                <span class="badge badge-soft rounded-pill">Healthcare</span>
+                <span class="badge badge-soft rounded-pill">TISS</span>
+                <span class="badge badge-soft rounded-pill">Compliance</span>
+              </div>
+              <ul class="compact" id="tiss_list">
+                <li>Streamlines integration between providers and health plans.</li>
+                <li>Converts 500k+ row spreadsheets into TISS (SOAP) or full messages in seconds.</li>
+                <li>Eliminates manual steps and reduces errors, ensuring full ANS compliance.</li>
+                <li>Enables legacy and modern systems to communicate efficiently and securely.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- PandaParking -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="h-title"><span class="emoji">🚗</span><h2 id="pp_title" class="h5 m-0">PandaParking</h2></div>
+              <p id="pp_tagline" class="tagline muted">The future of digital Blue Zone has begun.</p>
+              <div class="badges">
+                <span class="badge badge-soft rounded-pill">Mobility</span>
+                <span class="badge badge-soft rounded-pill">Payments</span>
+                <span class="badge badge-soft rounded-pill">Smart City</span>
+              </div>
+              <ul class="compact" id="pp_list">
+                <li>Brazil’s first fully digital Blue Zone platform (mobile app + POS + billing).</li>
+                <li>Users can park, renew and pay with a few taps.</li>
+                <li>Real-time enforcement tooling and automated reports.</li>
+                <li>Transparent, efficient curbside management for cities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- RemoteWork -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="h-title"><span class="emoji">💻</span><h2 id="rw_title" class="h5 m-0">RemoteWork Monitoring</h2></div>
+              <p id="rw_tagline" class="tagline muted">Productivity, transparency and security in remote work.</p>
+              <div class="badges">
+                <span class="badge badge-soft rounded-pill">Security</span>
+                <span class="badge badge-soft rounded-pill">Productivity</span>
+                <span class="badge badge-soft rounded-pill">LGPD</span>
+              </div>
+              <ul class="compact" id="rw_list">
+                <li>Tracks app usage time, clicks/keystrokes and active tasks.</li>
+                <li>Generates precise work-hour reports.</li>
+                <li>Captures screens and uses webcam for presence validation (LGPD aligned).</li>
+                <li>Balances efficiency and privacy for sensitive environments.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-3 text-center border-top">
+    <div class="container">
+      <small class="text-muted">© <span id="year"></span> Likwi — Renato Fagalde</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Inline i18n (no external JSON required)
+    const I18N = {
+      "en": {
+        t_title: "Projects",
+        t_subtitle: "Selected projects that blend performance, compliance and real-world impact.",
+        tiss_title: "TISS Project",
+        tiss_tagline: "Performance and compliance at scale.",
+        tiss_list: [
+          "Streamlines integration between providers and health plans.",
+          "Converts 500k+ row spreadsheets into TISS (SOAP) or full messages in seconds.",
+          "Eliminates manual steps and reduces errors, ensuring full ANS compliance.",
+          "Enables legacy and modern systems to communicate efficiently and securely."
+        ],
+        pp_title: "PandaParking",
+        pp_tagline: "The future of digital Blue Zone has begun.",
+        pp_list: [
+          "Brazil’s first fully digital Blue Zone platform (mobile app + POS + billing).",
+          "Users can park, renew and pay with a few taps.",
+          "Real-time enforcement tooling and automated reports.",
+          "Transparent, efficient curbside management for cities."
+        ],
+        rw_title: "RemoteWork Monitoring",
+        rw_tagline: "Productivity, transparency and security in remote work.",
+        rw_list: [
+          "Tracks app usage time, clicks/keystrokes and active tasks.",
+          "Generates precise work-hour reports.",
+          "Captures screens and uses webcam for presence validation (LGPD aligned).",
+          "Balances efficiency and privacy for sensitive environments."
+        ]
+      },
+      "pt-BR": {
+        t_title: "Projetos",
+        t_subtitle: "Projetos selecionados que unem performance, conformidade e impacto real.",
+        tiss_title: "Projeto TISS",
+        tiss_tagline: "Performance e conformidade em escala.",
+        tiss_list: [
+          "Integração ágil entre prestadores e operadoras de saúde.",
+          "Converte planilhas 500k+ em TISS (SOAP) ou mensagens completas em segundos.",
+          "Elimina etapas manuais e reduz erros, garantindo conformidade com a ANS.",
+          "Faz sistemas legados e modernos conversarem com eficiência e segurança."
+        ],
+        pp_title: "PandaParking",
+        pp_tagline: "O futuro da Zona Azul digital já começou.",
+        pp_list: [
+          "Primeira plataforma 100% digital: app mobile + PDV + cobrança.",
+          "Usuário estaciona, renova e paga com poucos toques.",
+          "Fiscalização em tempo real e relatórios automáticos.",
+          "Gestão de vagas transparente e eficiente para cidades."
+        ],
+        rw_title: "Monitoramento RemoteWork",
+        rw_tagline: "Produtividade, transparência e segurança no trabalho remoto.",
+        rw_list: [
+          "Mede tempo em apps, cliques/teclas e tarefas ativas.",
+          "Gera relatórios precisos de horas trabalhadas.",
+          "Captura telas e usa webcam para presença (alinhado à LGPD).",
+          "Equilíbrio entre eficiência e privacidade em ambientes sensíveis."
+        ]
+      }
+    };
+
+    function detectLang(){
+      const n=(navigator.languages&&navigator.languages[0])||navigator.language||"en";
+      return n && n.toLowerCase().startsWith("pt") ? "pt-BR" : "en";
+    }
+
+    function apply(lang){
+      const d = I18N[lang] || I18N["en"];
+      document.getElementById("t_title").textContent = d.t_title;
+      document.getElementById("t_subtitle").textContent = d.t_subtitle;
+
+      document.getElementById("tiss_title").textContent = d.tiss_title;
+      document.getElementById("tiss_tagline").textContent = d.tiss_tagline;
+      document.getElementById("pp_title").textContent = d.pp_title;
+      document.getElementById("pp_tagline").textContent = d.pp_tagline;
+      document.getElementById("rw_title").textContent = d.rw_title;
+      document.getElementById("rw_tagline").textContent = d.rw_tagline;
+
+      const ulFill = (id, arr) => {
+        const ul = document.getElementById(id);
+        ul.innerHTML = arr.map(x => `<li>${x}</li>`).join("");
+      };
+      ulFill("tiss_list", d.tiss_list);
+      ulFill("pp_list", d.pp_list);
+      ulFill("rw_list", d.rw_list);
+
+      document.documentElement.lang = (lang === "pt-BR" ? "pt-BR" : "en");
+      localStorage.setItem("lang", lang);
+    }
+
+    document.addEventListener("click", (e) => {
+      if(e.target.matches("[data-lang]")){
+        apply(e.target.getAttribute("data-lang"));
+      }
+    });
+
+    const start = localStorage.getItem("lang") || detectLang();
+    apply(start);
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
