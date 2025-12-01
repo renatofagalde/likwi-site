@@ -1,35 +1,42 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Likwi — Renato Fagalde | Backend, Cloud & Security</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-:root {
-  --bg: #0f1115; --bg-soft:#151822; --border:#222738; --text:#e6e6e6; --muted:#a3aab7; --card:#121626; --accent:#7c8cff;
-}
-html[data-bs-theme="dark"], body { background: var(--bg); color: var(--text); }
-.navbar, .border-bottom, .border-top { border-color: var(--border) !important; }
-.navbar { background: var(--bg-soft); }
-a.nav-link, .navbar-brand { color: var(--text) !important; }
-a.nav-link:hover { color: var(--accent) !important; }
-.hero { padding: 6rem 0; }
-.card { background: var(--card); border-color: var(--border); color: var(--text); }
-.card .text-muted { color: var(--muted) !important; }
-.btn-dark { background:#1f2433; border-color:#1f2433; }
-.btn-dark:hover { background:#2a3146; border-color:#2a3146; }
-footer { color: var(--muted); }
-.dropdown-menu { background: var(--bg-soft); color: var(--text); border-color: var(--border); }
-.dropdown-item { color: var(--text); }
-.dropdown-item:hover { background: var(--card); }
-.footer-links a { color: var(--text); text-decoration: none; }
-.footer-links a:hover { color: var(--accent); }
-.lang-switch{cursor:pointer} .card-link{text-decoration:none;color:inherit} .hero img{border-radius:1rem}</style>
+    :root {
+      --bg: #0f1115; --bg-soft:#151822; --border:#222738; --text:#e6e6e6; --muted:#a3aab7; --card:#121626; --accent:#7c8cff;
+    }
+    html[data-bs-theme="dark"], body { background: var(--bg); color: var(--text); }
+    .navbar, .border-bottom, .border-top { border-color: var(--border) !important; }
+    .navbar { background: var(--bg-soft); }
+    a.nav-link, .navbar-brand { color: var(--text) !important; }
+    a.nav-link:hover { color: var(--accent) !important; }
+    .hero { padding: 6rem 0; }
+    .card { background: var(--card); border-color: var(--border); color: var(--text); }
+    .card .text-muted { color: var(--muted) !important; }
+    .btn-dark { background:#1f2433; border-color:#1f2433; }
+    .btn-dark:hover { background:#2a3146; border-color:#2a3146; }
+    footer { color: var(--muted); }
+    .dropdown-menu { background: var(--bg-soft); color: var(--text); border-color: var(--border); }
+    .dropdown-item { color: var(--text); }
+    .dropdown-item:hover { background: var(--card); }
+    .footer-links a { color: var(--text); text-decoration: none; }
+    .footer-links a:hover { color: var(--accent); }
+    .lang-switch{cursor:pointer}
+    .card-link{text-decoration:none;color:inherit}
+    .hero img{border-radius:1rem}
+  </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg border-bottom"><div class="container">
+<nav class="navbar navbar-expand-lg border-bottom">
+  <div class="container">
     <a class="navbar-brand" id="brand" href="/">Likwi — Renato Fagalde</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div id="nav" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a id="nav_home" class="nav-link active" href="/">Home</a></li>
@@ -43,52 +50,188 @@ footer { color: var(--muted); }
           </ul>
         </li>
       </ul>
-    </div></div>
-  </nav>
-
-  <section class="hero"><div class="container"><div class="row align-items-center g-5">
-    <div class="col-md-6">
-      <h1 id="hero_title" class="display-5 fw-bold"></h1>
-      <p id="hero_sub" class="lead text-muted"></p>
-      <a id="cta_contact" class="btn btn-dark btn-lg mt-3" href="https://www.linkedin.com/in/renatofagalde/" target="_blank" rel="noopener"></a>
     </div>
-    <div class="col-md-6">
-      <img src="/img/hero.png" alt="Tech cloud" class="img-fluid">
-    </div>
-  </div></div></section>
+  </div>
+</nav>
 
-  <section class="py-5 border-top"><div class="container">
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-md-6">
+        <h1 id="hero_title" class="display-5 fw-bold"></h1>
+        <p id="hero_sub" class="lead text-muted"></p>
+        <a id="cta_contact" class="btn btn-dark btn-lg mt-3"
+           href="https://www.linkedin.com/in/renatofagalde/"
+           target="_blank" rel="noopener"></a>
+      </div>
+      <div class="col-md-6">
+        <img src="/img/hero.png" alt="Tech cloud" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 border-top">
+  <div class="container">
     <h2 id="section_projects" class="mb-4"></h2>
     <div class="row g-4">
-      <div class="col-md-4"><a class="card-link" href="/projects.html#tiss"><div class="card h-100 shadow-sm"><div class="card-body">
-        <h5 id="card_tiss_title" class="card-title"></h5><p id="card_tiss_desc" class="card-text text-muted"></p>
-      </div></div></a></div>
-      <div class="col-md-4"><a class="card-link" href="/projects.html#pandaparking"><div class="card h-100 shadow-sm"><div class="card-body">
-        <h5 id="card_parking_title" class="card-title"></h5><p id="card_parking_desc" class="card-text text-muted"></p>
-      </div></div></a></div>
-      <div class="col-md-4"><a class="card-link" href="/projects.html#remotework"><div class="card h-100 shadow-sm"><div class="card-body">
-        <h5 id="card_remote_title" class="card-title"></h5><p id="card_remote_desc" class="card-text text-muted"></p>
-      </div></div></a></div>
+      <div class="col-md-4">
+        <a class="card-link" href="/projects.html#tiss">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 id="card_tiss_title" class="card-title"></h5>
+              <p id="card_tiss_desc" class="card-text text-muted"></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a class="card-link" href="/projects.html#pandaparking">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 id="card_parking_title" class="card-title"></h5>
+              <p id="card_parking_desc" class="card-text text-muted"></p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a class="card-link" href="/projects.html#remotework">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 id="card_remote_title" class="card-title"></h5>
+              <p id="card_remote_desc" class="card-text text-muted"></p>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
-  </div></section>
+  </div>
+</section>
 
-  <footer class="py-4 text-center border-top">
-    <div class="footer-links mb-2">
-      <span id="footer_links">Links:</span>
-      &nbsp;<a href="https://www.linkedin.com/in/renatofagalde/" target="_blank" rel="noopener">LinkedIn</a>
-      &nbsp;·&nbsp;<a href="https://github.com/renatofagalde/" target="_blank" rel="noopener">GitHub</a>
-    </div>
-    <small id="footer_rights">© <span id="year"></span> Likwi.</small>
-  </footer>
+<footer class="py-4 text-center border-top">
+  <div class="footer-links mb-2">
+    <span id="footer_links">Links:</span>
+    &nbsp;<a id="footer_linkedin" href="https://www.linkedin.com/in/renatofagalde/" target="_blank" rel="noopener">LinkedIn</a>
+    &nbsp;·&nbsp;<a id="footer_github" href="https://github.com/renatofagalde/" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <small id="footer_rights">© <span id="year"></span> Likwi.</small>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function detectLang(){const n=(navigator.languages&&navigator.languages[0])||navigator.language||"en";return n.startsWith("pt")?"pt-BR":"en"}
-    let currentLang=localStorage.getItem("lang")||detectLang();
-    async function loadLocale(l){const r=await fetch(`/locales/${l}/common.json`,{cache:"no-store"});return r.json()}
-    function tAssign(d,i){const e=document.getElementById(i); if(e&&d[i]) e.textContent=d[i];}
-    async function applyLang(l){const d=await loadLocale(l);["brand","nav_home","nav_projects","nav_blog","hero_title","hero_sub","cta_contact","section_projects","card_tiss_title","card_tiss_desc","card_parking_title","card_parking_desc","card_remote_title","card_remote_desc","footer_links","footer_linkedin","footer_github","footer_rights"].forEach(id=>tAssign(d,id));document.documentElement.lang=(l==="pt-BR"?"pt-BR":"en");localStorage.setItem("lang",l);}
-    document.addEventListener("click",e=>{if(e.target.matches("[data-lang]")){currentLang=e.target.getAttribute("data-lang");applyLang(currentLang);}});
-    document.getElementById("year").textContent=new Date().getFullYear(); applyLang(currentLang);
-  </script>
-</body></html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const API_URL = "https://gz4z111dwi.execute-api.us-east-1.amazonaws.com/production/notes/likwi";
+
+  function detectLang() {
+    const n = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+    return n.startsWith("pt") ? "pt-BR" : "en";
+  }
+
+  let currentLang = localStorage.getItem("lang") || detectLang();
+  let notePromise = null;
+
+  async function fetchRawNote() {
+    const res = await fetch(API_URL, { cache: "no-store" });
+    if (!res.ok) {
+      throw new Error("Erro ao buscar nota: " + res.status);
+    }
+    return res.json();
+  }
+
+  // Aqui a gente adapta o JSON que vem da API
+  // para um formato fixo: { id, name, translations }
+  function normalizeNote(raw) {
+    if (!raw) return null;
+
+    // Caso futuro, se você já devolver direto { translations: ... }
+    if (raw.translations) {
+      return raw;
+    }
+
+    // Formato atual: raw.content.translations
+    if (raw.content && raw.content.translations) {
+      return {
+        id: raw.content.id || raw.id,
+        name: raw.content.name || raw.name,
+        translations: raw.content.translations
+      };
+    }
+
+    console.warn("Formato de nota inesperado:", raw);
+    return null;
+  }
+
+  async function loadNote() {
+    if (!notePromise) {
+      notePromise = fetchRawNote()
+        .then(normalizeNote)
+        .catch(err => {
+          console.error("Erro ao carregar nota:", err);
+          return null;
+        });
+    }
+    return notePromise;
+  }
+
+  async function loadLocale(lang) {
+    const note = await loadNote();
+    if (!note || !note.translations) {
+      return {};
+    }
+    const translations = note.translations;
+    return translations[lang] || translations["en"] || {};
+  }
+
+  function tAssign(dict, id) {
+    const el = document.getElementById(id);
+    if (el && dict[id]) {
+      el.textContent = dict[id];
+    }
+  }
+
+  async function applyLang(lang) {
+    const dict = await loadLocale(lang);
+
+    [
+      "brand",
+      "nav_home",
+      "nav_projects",
+      "nav_blog",
+      "hero_title",
+      "hero_sub",
+      "cta_contact",
+      "section_projects",
+      "card_tiss_title",
+      "card_tiss_desc",
+      "card_parking_title",
+      "card_parking_desc",
+      "card_remote_title",
+      "card_remote_desc",
+      "footer_links",
+      "footer_linkedin",
+      "footer_github",
+      "footer_rights"
+    ].forEach(id => tAssign(dict, id));
+
+    const note = await loadNote();
+    if (note && note.name) {
+      document.title = note.name;
+    }
+
+    document.documentElement.lang = (lang === "pt-BR" ? "pt-BR" : "en");
+    localStorage.setItem("lang", lang);
+  }
+
+  document.addEventListener("click", e => {
+    if (e.target.matches("[data-lang]")) {
+      currentLang = e.target.getAttribute("data-lang");
+      applyLang(currentLang);
+    }
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+  applyLang(currentLang);
+</script>
+
+</body>
+</html>
